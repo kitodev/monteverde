@@ -8,9 +8,7 @@ function CheckoutProduct({ id, image, title, price, rating}) {
     const removeFromBasket = () => {
         dispatch({
             type: 'REMOVE_FROM_BASKET',
-            item: {
-                id: id,
-            }
+            id:id,
         })
     }
     return (

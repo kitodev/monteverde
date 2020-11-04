@@ -11,6 +11,9 @@ function Login() {
     const signIn = e => {
         auth.signInWithEmailAndPassword(email, password)
         .then(auth => {
+            if (auth) {
+                history.push('/')
+            }
             history.push('/')
         })
         .catch((err) => alert(err.message))

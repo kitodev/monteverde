@@ -1,8 +1,9 @@
 import React, {useEffect} from 'react';
-import './App.css';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import './App.scss';
+import { BrowserRouter as Router, Route, Switch, HashRouter} from 'react-router-dom';
 import Header from "./Header";
 import Home from "./Home";
+import Orders from "./Orders";
 import Checkout from "./Checkout";
 import Login from "./Login";
 import Payment from "./Payment";
@@ -40,15 +41,18 @@ function App() {
   return (
     <Router>
     <div className="App">
-      
       <Switch>
+        <Router path="/orders">
+          <Header />
+          <Orders />
+        </Router>
+        <Router path="/login">
+        <Login />
+        </Router>
         <Route path="/checkout">
         <Header />
         <Checkout />
         </Route>
-        <Router path="/login">
-        <Login />
-        </Router>
         <Router path="/payment">
         <Header />  
           <Elements stripe={promise}>

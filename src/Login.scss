@@ -27,6 +27,7 @@
 .login__container  > h1 {
     font-weight: 500;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .login__container  > form > h5 {
@@ -41,13 +42,28 @@
 }
 
 .login__signInButton {
-    background: red;
+    background: #fdcb6e;
+    border-radius: 2px;
+    width: 100%;
+    height: 30px;
+    border: 1px solid;
+    color:#636e72;
+    margin-top: 10px;
+    font-weight: 600;
+    border-color: #fdcb6e #fdcb6e #fdcb6e;
+    cursor: pointer;
+}
+
+
+.login__registerButton {
+    background: #f0932b;
     border-radius: 2px;
     width: 100%;
     height: 30px;
     border: 1px solid;
     margin-top: 10px;
-    border-color: red red red;
+    font-weight: 600;
+    color: #636e72;
+    border-color: #fdcb6e #fdcb6e #fdcb6e;
+    cursor: pointer;
 }
-
-
